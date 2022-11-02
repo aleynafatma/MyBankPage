@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box;  */
+    }
+    .head{
+        display: flex;
+    }
+    .logo{
+        background-color: #FFDEAD;
+        flex:10;
+        height: 10vh;
+        
+
+    }
+    .shift-left{ /* To shift the images left, I opened a class called shift-left and made the float left. */
+        float: left;
+    }
+    .slogan{
+        background-color: #FFDEAD;
+        flex: 10;
+
+    }
+    .body{
+        display: flex;
+    }
+    .body-left{
+        background-color: 	#A0522D;
+        flex: 5;
+        height: 70vh;
+    }
+    .body-left-box{ 
+        width: 150px; 
+        height: 60px;
+        border: 3px solid #000;
+        background-color:#FFEBCD;
+        border-radius: 1pc;
+    }
+    .body-middle{
+        background-color:#FFEBCD;
+        flex: 10;
+    }
+    .body-middle-box{
+        background-color:	#FFF8DC;
+        width: 130px; 
+        height: 20px;
+        border: 2px solid #000;
+        border-radius: 2pc;
+    }
+    .shift-right{
+        float: right;
+    }
+    .body-right{
+        flex: 5;
+        height: 70vh;
+        background-color: 	#A0522D;
+    }
+    .body-right-box{
+        width: 150px; 
+        height: 130px;
+        border: 3px solid #000;
+        background-color:#FFEBCD;
+        border-radius: 2pc;
+    }
+    .body-right-boxinbox-0{ /* I added a new box inside the box to the right of the body part and edit its properties (size, thickness, etc.) here. */
+        width: 100px; 
+        height: 80px;
+        border: 1px solid #000;
+        border-radius: 2pc;
+        margin-left:auto;
+
+    }
+    .body-right-boxinbox-1{ /* I added a new box in the box to the right of the body section because it has different properties than the box I added before, I edited the box properties I added in the last box here. */
+        width: 125px; 
+        height: 20px;
+        border: 1px solid #000;
+        border-radius: 2pc;
+        margin-top: auto;
+
+    }
+    .end{
+        background-color: #FFDEAD;
+        height: 20vh;
+        display: flex;
+        
+        
+    }
+    .end-left{
+        background-color: #FFDEAD;
+        flex: 5;
+        height: 20vh;
+
+    }
+    .end-middle{
+        background-color: #FFDEAD;
+        height: 20vh;
+        flex: 5;
+
+    }
+    .end-right{
+        background-color: #FFDEAD;
+        height: 20vh;
+        flex: 5;
+    }
+    .end-box{
+        margin-top: 20px;
+        margin-left: 15px;
+        width: 150px; 
+        height: 100px;
+        border: 3px solid #000;
+        background-color:#FFEBCD;
+        border-radius: 2pc;
+        padding-left:25px ;
+
+    }
+    
+
+   </style>
+</head>
+<body>
+    <div class="head"> <!--I basically divided the page into three class. Head Body and End. Then I worked on these 3 class and made the necessary applications.-->
+
+        <div class="logo"> <!--I divided the head part into two, have the logo name on the left side, and put the logo and brand name.-->
+            <img src="bank.png"
+            width="75hv"
+            height="50hv"/> <br>
+            <p><font face="Franklin Gothic Heavy"> CHEAP CURRENCY </font></p> 
+            
+
+        </div>
+        <div class="slogan"> <!--I named the slogan on the left side, I wrote the brand slogan.-->
+           <center> <p><font face="Franklin Gothic Heavy">It's not as complicated as life.<br>
+                The most comfortable banking for you!</font></p></center>
+
+        </div>
+
+    </div>
+    <div class="body">
+        <div class="body-left"> <center><br>
+            <div class="body-left-box"> <!--I divided the body part into 3 parts, right middle, and left. I named the boxes I put on the left side body-left-box.-->
+                <img src="dollar-symbol.png"
+                class="shift-left"
+                width="50hv"
+                height="50"/>
+                <p>18,60</p></div><br>
+            <div class="body-left-box"> <!--Since I will put different photos in different sizes in each box, ı  opened boxes in divs as many as the number of boxes.-->
+                <img src="euro.png"
+                class="shift-left"
+                width="40hv"
+                height="40hv"/>
+                <p>18,53</p>
+            </div><br>
+            <div class="body-left-box">
+                <img src="british-pound.png"
+                class="shift-left"
+                width="50hv"
+                height="50hv"/>
+                <p>21,56</p></div><br>
+            <div class="body-left-box">
+                <img src="bitcoin.png"
+                class="shift-left"
+                width="45hv"
+                height="45hv"/>
+                <p>382.386,05</p></div><br>
+            <div class="body-left-box">
+                <img src="gold.png"
+                class="shift-left"
+                width="50hv"
+                height="50hv"/><p>983,36</p></div><br>
+            <div class="body-left-box">
+                <img src="platinum.png"
+                class="shift-left"
+                width="50hv"
+                height="50hv"/><p>569,27</p>
+            </div></center>
+        </div>
+        <div class="body-middle">
+            <div class="welcome"> <!--I opened a class to write a welcome sentence in the middle of the body part.-->
+                <center> <p><font face="Franklin Gothic Heavy">"Welcome to where money is safest!"</font></p></center><br>
+                <hr size="4" color="black"></div><br>
+               <center> <img src="bank2.png"
+                width="200v"
+                height="150hv"/> </center><br><br><br>
+            <center><p><font face="Franklin Gothic Heavy">Do you need a loan?</font></p></center><br>
+                <center><div class="body-middle-box">Transport Loan</div><br>
+                <div class="body-middle-box">Housing Loan</div><br>
+                <div class="body-middle-box">Other Loans</div></center><br><br>
+                <img src="check.png" 
+                class="shift-right"
+                width="50hv"
+                height="50hv">
+               
+            </p><br>
+            <p></p>
+        </div>
+    
+        <div class="body-right"><center><br><br>
+            <div class="body-right-box">
+                <img src="user.png"
+                class="shift-left"
+                width="45hv"
+                height="45hv"/>
+                <div class="body-right-boxinbox-0">CEM KARACA</div> <!--I opened a class called body-right-boxinbox-0 to add a new box to the box on the right of the body part.-->
+            </div><br>
+            <div class="body-right-box"> <br>
+                <img src="wallet.png"
+                class="shift-left"
+                width="45hv"
+                height="45hv"/>
+                <div class="boxinbox"><p>15.876</p></div></div><br>
+            <div class="body-right-box">
+                <p>LAST ACTIONS </p>
+                <div class="body-right-boxinbox-1">+9.820</div><br>
+                <div class="body-right-boxinbox-1">-525,99</div></div></center></div></div>
+    <div class="end"> <!--I divided the end into 3 parts and added 3 boxes here.-->
+        <div class="end-left"><center><!--In order to add different photos and texts inside the boxes, I opened three classes and placed the boxes inside them.-->
+            <div class="end-box">
+                <img src="email.png"
+                style="margin-top: 10px; "
+                width="75hv"
+                height="75hv" >
+            </div></center></div>
+        <div class="end-middle"><center>
+            <div class="end-box">
+                <img src="gps.png"
+                style="margin-top: 10px; "
+                width="75hv"
+                height="75hv" >
+            
+            </div></center></div>
+        <div class="end-right"><center>
+            <div class="end-box">
+                <img src="phone-call.png"
+                style="margin-top: 10px; "
+                width="75hv"
+                height="75hv" > <br>
+           
+        </div></center></div>
+    </div>
+    
+
+   
+</body>
+</html>
